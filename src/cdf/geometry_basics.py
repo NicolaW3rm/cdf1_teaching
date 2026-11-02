@@ -17,7 +17,7 @@ Adding a new function with Copilot
 import math
 import Rhino.Geometry as rg
 
-def create_cone(base_point=None, height=10.0, radius=5.0, cap_bottom=True):
+def create_cone_test1 (base_point=None, height=10.0, radius=5.0, cap_bottom=True):
     """
     Build a cone as a Brep.
 
@@ -35,7 +35,9 @@ def create_cone(base_point=None, height=10.0, radius=5.0, cap_bottom=True):
     cone = rg.Cone(plane, height, radius)
     return cone.ToBrep(cap_bottom)
 
-def create_sphere():
+def create_sphere(center=None, r=5.0):
+    if center is None:
+            center = rg.Point3d(0, 0, 0)
     pass  # TODO: Implement this function to create a sphere using Rhino.Geometry
 
 def boolean_difference(brep_a, brep_b):

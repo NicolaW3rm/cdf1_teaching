@@ -8,9 +8,12 @@
 
 break_condition = 0
 
-...
+while break_condition <10:
+    break_condition +=2
+    print(break_condition)
 
-print("out of while loop")
+else:
+    print("out of while loop")
 
 # ----------------------------------------------
 

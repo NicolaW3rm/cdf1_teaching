@@ -6,12 +6,14 @@
 a = 57
 b = 100
 
-# if a is equal to b
-print("A is equal to B.")
+if a==b:  # if a is equal to b
+    print("A is equal to B.")
 
-# elif b is equal to 100
-print("B is equal to 100.")
 
-# else
-print("Neither A is equal to B nor B is equal to 100.")
+elif b==100: 
+    print("B is equal to 100.")
+
+
+else: 
+    print("Neither A is equal to B nor B is equal to 100.")
 
