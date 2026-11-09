@@ -500,7 +500,6 @@ def boolean_difference(brep_a, brep_b, tolerance=0.001):
         )
     return result
 
-
 def remove_breps_on_intersection(breps, cutter, tolerance=0.001):
     """
     Remove intersecting units from a Brep assembly.
